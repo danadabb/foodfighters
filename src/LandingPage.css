@@ -1,0 +1,13 @@
+.LandingPage-header {
+  color: #dadd39;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 71.1px;
+}
+
+.LandingPage-graphics {
+  position: relative;
+  top: -120px;
+}

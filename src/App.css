@@ -1,4 +1,10 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
+@import "./LandingPage.css";
+
+:root {
+  font-family: "Rubik", sans-serif;
+  background-color: #e5e5e5;
+}
 
 .App {
   text-align: center;
@@ -7,6 +13,10 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-root-element {
+  padding: 6px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
