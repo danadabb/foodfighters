@@ -6,7 +6,7 @@ export function LandingPage() {
   return (
     <>
       <Typography className="LandingPage-header">Food fighters</Typography>
-      <Image
+      <img
         className="LandingPage-graphics"
         src={`${process.env.PUBLIC_URL}/landing-page-graphics.png`}
       />
