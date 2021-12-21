@@ -1,5 +1,6 @@
 .ProductReviewPage-datetime-container {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .ProductReviewPage-datetime-field {

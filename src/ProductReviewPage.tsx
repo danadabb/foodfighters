@@ -1,6 +1,6 @@
-import { DatePicker, Input, TimePicker, Typography } from "antd";
+import { Button, DatePicker, Input, TimePicker, Typography } from "antd";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useSessionStorage } from "react-use";
 import foodList from "./utils/mockCardData.json";
 
@@ -63,6 +63,8 @@ export function ProductReviewPage() {
             setDate={setDate}
             setTime={setTime}
           />
+
+          <BackConfirmButtonGroup />
         </>
       )}
     </>
@@ -93,6 +95,29 @@ function DateTimeSelectors({
         showSecond={false}
         onChange={(val) => setTime(val?.toString() ?? "")}
       />
+    </div>
+  );
+}
+
+function BackConfirmButtonGroup() {
+  return (
+    <div className="ProductDetailPage-back-next-button-group">
+      <Button
+        type="ghost"
+        block
+        size="large"
+        className="ProductDetailPage-back-next-button-group__button"
+      >
+        <Link to="/search">Back</Link>
+      </Button>
+      <Button
+        type="primary"
+        block
+        size="large"
+        className="ProductDetailPage-back-next-button-group__button"
+      >
+        Confirm
+      </Button>
     </div>
   );
 }
