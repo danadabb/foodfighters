@@ -5,7 +5,9 @@
     "brandName": "Del Monte",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "spinach.jpeg",
-    "productQuantity": 3
+    "productQuantity": 3,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "91964": {
     "title": "One Sausage",
@@ -13,7 +15,9 @@
     "brandName": "Steggles",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "sausage.jpeg",
-    "productQuantity": 1
+    "productQuantity": 1,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "77787": {
     "title": "Corn Flakes",
@@ -21,7 +25,9 @@
     "brandName": "Kellogs",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "cornflakes.jpeg",
-    "productQuantity": 2
+    "productQuantity": 2,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "e2395": {
     "title": "Biscuits, assorted",
@@ -29,7 +35,9 @@
     "brandName": "Assorted",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "biscuits.jpeg",
-    "productQuantity": 5
+    "productQuantity": 5,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "59922": {
     "title": "Coconut Juice",
@@ -37,7 +45,9 @@
     "brandName": "Cocobella",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "coconutjuice.jpeg",
-    "productQuantity": 1
+    "productQuantity": 1,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "f30ca": {
     "title": "Instant Coffee",
@@ -45,7 +55,9 @@
     "brandName": "Nescafe",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "coffee.jpeg",
-    "productQuantity": 1
+    "productQuantity": 1,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "258d5": {
     "title": "Canned Beans",
@@ -53,7 +65,9 @@
     "brandName": "Heinz",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "beans.png",
-    "productQuantity": 6
+    "productQuantity": 6,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "833c9": {
     "title": "Rice Bubbles",
@@ -61,7 +75,9 @@
     "brandName": "Kellogs",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "ricebubbles.jpeg",
-    "productQuantity": 1
+    "productQuantity": 1,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "87780": {
     "title": "Apple Juice",
@@ -69,7 +85,9 @@
     "brandName": "Daily Juice",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "applejuice.jpeg",
-    "productQuantity": 1
+    "productQuantity": 1,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   },
   "ddf03": {
     "title": "Canned Tuna",
@@ -77,6 +95,8 @@
     "brandName": "Wild Planet",
     "description": "Food product description placeholder. Yummy yummy",
     "pictureUrl": "tuna.jpeg",
-    "productQuantity": 9
+    "productQuantity": 9,
+    "streetName": "Mt Alexander Rd",
+    "postCode": "3032"
   }
 }

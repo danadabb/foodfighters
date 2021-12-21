@@ -10,7 +10,8 @@ import { ProductDetailPage } from "./ProductDetailPage";
 import ManualDonatePage from "./ManualDonatePage";
 // import { LoginPage } from "./LoginPage";
 // import {AccountPage} from './AccountPage';
-import  AccountPage  from './AccountPage';
+import AccountPage from "./AccountPage";
+import { ProductReviewPage } from "./ProductReviewPage";
 
 function App() {
   const { Content } = Layout;
@@ -26,11 +27,11 @@ function App() {
             <Route path="/product/:id" element={<ProductDetailPage />} />
             <Route path="/donate" element={<ManualDonatePage />} />
             <Route path="/account" element={<AccountPage />} />
+            <Route path="/review/:id" element={<ProductReviewPage />} />
           </Routes>
         </Content>
       </Layout>
     </BrowserRouter>
-
   );
 }
 

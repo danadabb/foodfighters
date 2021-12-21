@@ -12,6 +12,8 @@ type ProductProps = {
   description: string;
   pictureUrl: string;
   productQuantity: number;
+  streetName: string;
+  postCode: string;
 };
 
 export function ProductDetailPage() {
@@ -68,16 +70,15 @@ function BackNextButtonGroup({
   selectedQuantity: number;
   productId: string;
 }) {
-  const cart = useSessionStorage<any>("cart", []);
+  const [confirmedQuantity, setConfirmedQuantity] = useSessionStorage<number>(
+    "confirmedQuantity",
+    0
+  );
 
   const addToCart = () => {
-    cart.push({
-      [productId]: {
-        quantity: selectedQuantity,
-      },
-    });
-    window.history.pushState(null, "", "/cart");
-    window.location.href = "/cart";
+    setConfirmedQuantity(selectedQuantity);
+    window.history.pushState(null, "", `/review/${productId}`);
+    window.location.href = `/review/${productId}`;
   };
 
   return (
