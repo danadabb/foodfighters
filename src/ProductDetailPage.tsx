@@ -1,4 +1,4 @@
-import { Button, Image, Typography } from "antd";
+import { Button, Typography } from "antd";
 import { Link, useParams } from "react-router-dom";
 import { ProductQuantitySelector } from "./components/ProductQuantitySelector";
 import foodList from "./utils/mockCardData.json";
@@ -43,7 +43,7 @@ export function ProductDetailPage() {
         <Typography.Paragraph>{brandName}</Typography.Paragraph>
 
         <div className="ProductDetailPage-product-image-container">
-          <Image
+          <img
             src={`${process.env.PUBLIC_URL}/${pictureUrl}`}
             alt={title}
             width="70%"
