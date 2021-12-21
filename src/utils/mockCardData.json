@@ -1,0 +1,62 @@
+{
+  "92b6c": {
+    "cardTitle": "Can of Spinach",
+    "expiryDate": "10.04.2022",
+    "brandName": "Del Monte",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "91964": {
+    "cardTitle": "One Sausage",
+    "expiryDate": "15.02.2022",
+    "brandName": "Steggles",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "77787": {
+    "cardTitle": "Corn Flakes",
+    "expiryDate": "05.09.2022",
+    "brandName": "Kellogs",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "e2395": {
+    "cardTitle": "Biscuits, assorted",
+    "expiryDate": "12.04.2023",
+    "brandName": "Assorted",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "59922": {
+    "cardTitle": "Coconut Juice",
+    "expiryDate": "29.11.2021",
+    "brandName": "Cocobella",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "f30ca": {
+    "cardTitle": "Instant Coffee",
+    "expiryDate": "02.01.2022",
+    "brandName": "Nescafe",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "258d5": {
+    "cardTitle": "Canned Beans",
+    "expiryDate": "25.07.2024",
+    "brandName": "Heinz",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "833c9": {
+    "cardTitle": "Rice Bubbles",
+    "expiryDate": "10.04.2022",
+    "brandName": "Kellogs",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "87780": {
+    "cardTitle": "Apple Juice",
+    "expiryDate": "26.12.2021",
+    "brandName": "Daily Juice",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  },
+  "ddf03": {
+    "cardTitle": "Canned Tuna",
+    "expiryDate": "24.12.2021",
+    "brandName": "Wild Planet",
+    "foodImage": "@app/src/utils/images/spinach.jpeg"
+  }
+}
