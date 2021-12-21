@@ -1,4 +1,4 @@
-import { Button, Checkbox, Col, Input, Row, Form, DatePicker } from "antd";
+import { Button, Col, Input, Row, Form, DatePicker } from "antd";
 import { Link } from "react-router-dom";
 
 const ManualDonatePage = () => {
@@ -25,14 +25,14 @@ const ManualDonatePage = () => {
             ghost
             type="primary"
             style={{
-              width: "48%",
+              width: "48%", // TODO this is garbage
               marginRight: "4%",
             }}
           >
             Back
           </Button>
           <Button style={{ width: "48%" }} type="primary">
-            Next
+            Submit
           </Button>
         </Col>
       </Row>
