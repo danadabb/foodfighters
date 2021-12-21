@@ -1,0 +1,17 @@
+.LoginPage-Input {
+  margin: 10px 0;
+}
+
+.LoginPage-checkox-container {
+  margin: 16px 0;
+}
+
+.LoginPage-get-code-container {
+  display: flex;
+  align-items: center;
+}
+
+.LoginPage-get-code-button {
+  box-sizing: border-box;
+  margin-left: 8px;
+}

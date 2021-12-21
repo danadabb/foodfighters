@@ -1,0 +1,28 @@
+.LandingPage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.LandingPage-header {
+  color: #dadd39;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 71.1px;
+  z-index: 99;
+  position: relative;
+}
+
+.LandingPage-graphics {
+  position: relative;
+  top: -120px;
+  width: 100%;
+}
+
+.LandingPage-getting-started-button {
+  position: relative;
+  top: -60px;
+}
