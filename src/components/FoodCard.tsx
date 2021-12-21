@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Typography } from "antd";
+import { Button, Card, Typography } from "antd";
 import { Link } from "react-router-dom";
 
 type foodCardProps = {
@@ -8,6 +8,7 @@ type foodCardProps = {
   brandName: string;
   foodImage: string;
   foodId: string;
+  deleteButton?: boolean;
 };
 
 const FoodCard = ({
@@ -16,6 +17,7 @@ const FoodCard = ({
   brandName,
   foodImage,
   foodId,
+  deleteButton = false,
 }: foodCardProps): JSX.Element => {
   const { Title, Text } = Typography;
 
@@ -93,6 +95,13 @@ const FoodCard = ({
             </div>
           </div>
         </Link>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          {deleteButton && <Link to="/search">
+          <Button danger block size="large">
+            Remove listing
+          </Button>
+        </Link>}
+        </div>
       </Card>
     </>
   );

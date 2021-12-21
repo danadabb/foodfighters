@@ -1,4 +1,5 @@
 import { Button, Col, Input, Row, Form, DatePicker, AutoComplete } from "antd";
+import { Link } from "react-router-dom";
 
 const ManualDonatePage = () => {
   return (
@@ -23,19 +24,23 @@ const ManualDonatePage = () => {
       </Row>
       <Row justify="space-around">
         <Col span={20}>
-          <Button
-            ghost
-            type="primary"
-            style={{
-              width: "48%", // flex was giving me grief, TODO: fix this
-              marginRight: "4%",
-            }}
-          >
-            Back
-          </Button>
-          <Button style={{ width: "48%" }} type="primary">
-            Submit
-          </Button>
+          <Link to="/account">
+            <Button
+              ghost
+              type="primary"
+              style={{
+                width: "48%", // flex was giving me grief, TODO: fix this
+                marginRight: "4%",
+              }}
+            >
+              Back
+            </Button>
+          </Link>
+          <Link to="/account?donated=true">
+            <Button style={{ width: "48%" }} type="primary">
+              Submit
+            </Button>
+          </Link>
         </Col>
       </Row>
     </>
