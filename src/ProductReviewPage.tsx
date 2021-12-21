@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSessionStorage } from "react-use";
 import foodList from "./utils/mockCardData.json";
+import FoodCard from "./components/FoodCardSmall";
 
 type ProductProps = {
   title: string;
@@ -24,21 +25,12 @@ export function ProductReviewPage() {
   const [date, setDate] = useState<string>("");
   const [time, setTime] = useState<string>("");
 
-  const {
-    title,
-    description,
-    expiryDate,
-    brandName,
-    pictureUrl,
-    productQuantity,
-    postCode,
-    streetName,
-  } = Object.entries(foodList as Record<string, any>).find(
-    (entry) => entry[0] === params.id
-  )![1] as ProductProps;
+  const { title, pictureUrl, postCode, streetName } = Object.entries(
+    foodList as Record<string, any>
+  ).find((entry) => entry[0] === params.id)![1] as ProductProps;
 
   return (
-    <>
+    <div className="ProductReviewPage-container">
       <Typography.Title level={2}>Product Review</Typography.Title>
       {confirmedQuantity === 0 && (
         <Typography.Paragraph>
@@ -46,7 +38,14 @@ export function ProductReviewPage() {
         </Typography.Paragraph>
       )}
       {confirmedQuantity > 0 && (
-        <>
+        <div className="ProductReviewPage-info-container">
+          <FoodCard
+            setQuantity={setConfirmedQuantity}
+            cardTitle={title}
+            foodId={params.id!}
+            foodImage={pictureUrl}
+            quantity={confirmedQuantity}
+          />
           <Typography.Title level={4}>Pick Up Location</Typography.Title>
 
           <Typography.Title level={5}>Street name</Typography.Title>
@@ -63,11 +62,11 @@ export function ProductReviewPage() {
             setDate={setDate}
             setTime={setTime}
           />
-
-          <BackConfirmButtonGroup />
-        </>
+        </div>
       )}
-    </>
+
+      <BackConfirmButtonGroup quantity={confirmedQuantity} />
+    </div>
   );
 }
 
@@ -99,7 +98,7 @@ function DateTimeSelectors({
   );
 }
 
-function BackConfirmButtonGroup() {
+function BackConfirmButtonGroup({ quantity }: { quantity: number }) {
   return (
     <div className="ProductDetailPage-back-next-button-group">
       <Button
@@ -115,6 +114,7 @@ function BackConfirmButtonGroup() {
         block
         size="large"
         className="ProductDetailPage-back-next-button-group__button"
+        disabled={Boolean(quantity === 0)}
       >
         Confirm
       </Button>
