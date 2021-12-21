@@ -1,5 +1,4 @@
-import { Button, Col, Input, Row, Form, DatePicker } from "antd";
-import { Link } from "react-router-dom";
+import { Button, Col, Input, Row, Form, DatePicker, AutoComplete } from "antd";
 
 const ManualDonatePage = () => {
   return (
@@ -16,6 +15,9 @@ const ManualDonatePage = () => {
             <Form.Item label="Product Name" required>
               <DatePicker />
             </Form.Item>
+            <Form.Item label="Pickup Location" required>
+              <AutoComplete options={[{ value: "123 Fake Street" }]} />
+            </Form.Item>
           </Form>
         </Col>
       </Row>
@@ -25,7 +27,7 @@ const ManualDonatePage = () => {
             ghost
             type="primary"
             style={{
-              width: "48%", // TODO this is garbage
+              width: "48%", // flex was giving me grief, TODO: fix this
               marginRight: "4%",
             }}
           >
