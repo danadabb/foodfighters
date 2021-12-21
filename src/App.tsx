@@ -7,6 +7,7 @@ import { Header } from "./Header";
 import { Layout } from "antd";
 import { LoginPage } from "./LoginPage";
 import { ProductDetailPage } from "./ProductDetailPage";
+import ManualDonatePage from "./ManualDonatePage";
 // import { LoginPage } from "./LoginPage";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/search" element={<SearchPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/product/:id" element={<ProductDetailPage />} />
+            <Route path="/donate" element={<ManualDonatePage />} />
           </Routes>
         </Content>
       </Layout>
