@@ -34,7 +34,7 @@ const ManualDonatePage = () => {
             Back
           </Button>
           <Button style={{ width: "48%" }} type="primary">
-            Next
+            Submit
           </Button>
         </Col>
       </Row>
