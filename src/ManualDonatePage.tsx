@@ -1,4 +1,4 @@
-import { Button, Col, Input, Row, Form, DatePicker } from "antd";
+import { Button, Col, Input, Row, Form, DatePicker, AutoComplete } from "antd";
 
 const ManualDonatePage = () => {
   return (
@@ -14,6 +14,9 @@ const ManualDonatePage = () => {
             </Form.Item>
             <Form.Item label="Product Name" required>
               <DatePicker />
+            </Form.Item>
+            <Form.Item label="Pickup Location" required>
+              <AutoComplete options={[{ value: "123 Fake Street" }]} />
             </Form.Item>
           </Form>
         </Col>
