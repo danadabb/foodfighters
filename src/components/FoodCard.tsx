@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card, Typography } from "antd";
 import { Link } from "react-router-dom";
+import { DeleteFilled } from "@ant-design/icons";
 
 type foodCardProps = {
   cardTitle: string;
@@ -96,11 +97,13 @@ const FoodCard = ({
           </div>
         </Link>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          {deleteButton && <Link to="/search">
-          <Button danger block size="large">
-            Remove listing
-          </Button>
-        </Link>}
+          {deleteButton && (
+            <Link to="/search">
+              <Button danger type="link" size="small">
+                Remove <DeleteFilled />
+              </Button>
+            </Link>
+          )}
         </div>
       </Card>
     </>
