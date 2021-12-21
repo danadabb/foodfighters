@@ -18,7 +18,7 @@ export function Header() {
         </Col>
 
         <Col style={{ alignItems: "center" }}>
-          {location.pathname !== "/" && (
+          {/* {location.pathname !== "/" && (
             <Icon
               style={{ marginRight: 10 }}
               component={() => (
@@ -29,7 +29,7 @@ export function Header() {
                 />
               )}
             />
-          )}
+          )} */}
           <Link to="/account">
             <MenuOutlined style={{ fontSize: 20, color: "#520339" }} />
           </Link>
