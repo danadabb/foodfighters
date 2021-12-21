@@ -9,12 +9,18 @@ function AccountPage() {
 
   return (
     <>
-      <h1>Welcome,Jane!</h1>
-      <Link to="/donate">
-        <Button type="primary" block size="large">
-          Donate
-        </Button>
-      </Link>
+      <h1>Welcome, Jane!</h1>
+        <Link to="/search">
+          <Button type="primary" block size="large">
+            Search for food listings
+          </Button>
+        </Link>
+        <Divider type="vertical" />
+        <Link to="/donate">
+          <Button type="primary" block size="large">
+            Donate
+          </Button>
+        </Link>
       <Divider type="vertical" />
       <h3>My Listings</h3>
       {foodlist.slice(0, 2).map(([id, val]) => (
