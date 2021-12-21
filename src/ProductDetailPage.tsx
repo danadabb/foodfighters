@@ -31,35 +31,37 @@ export function ProductDetailPage() {
   )![1] as ProductProps;
 
   return (
-    <>
-      <Typography.Title level={2}>{title}</Typography.Title>
-      <Typography.Paragraph>{description}</Typography.Paragraph>
+    <div className="ProductDetailPage-container">
+      <div>
+        <Typography.Title level={2}>{title}</Typography.Title>
+        <Typography.Paragraph>{description}</Typography.Paragraph>
 
-      <Typography.Title level={4}>Expiry date</Typography.Title>
-      <Typography.Paragraph>{expiryDate}</Typography.Paragraph>
+        <Typography.Title level={4}>Expiry date</Typography.Title>
+        <Typography.Paragraph>{expiryDate}</Typography.Paragraph>
 
-      <Typography.Title level={4}>Brand Name</Typography.Title>
-      <Typography.Paragraph>{brandName}</Typography.Paragraph>
+        <Typography.Title level={4}>Brand Name</Typography.Title>
+        <Typography.Paragraph>{brandName}</Typography.Paragraph>
 
-      <div className="ProductDetailPage-product-image-container">
-        <Image
-          src={`${process.env.PUBLIC_URL}/${pictureUrl}`}
-          alt={title}
-          width="70%"
+        <div className="ProductDetailPage-product-image-container">
+          <Image
+            src={`${process.env.PUBLIC_URL}/${pictureUrl}`}
+            alt={title}
+            width="70%"
+          />
+        </div>
+
+        <ProductQuantitySelector
+          availableQuantity={productQuantity}
+          selectedQuantity={selectedQuantity}
+          dispatcher={setSelectedQuantity}
         />
       </div>
-
-      <ProductQuantitySelector
-        availableQuantity={productQuantity}
-        selectedQuantity={selectedQuantity}
-        dispatcher={setSelectedQuantity}
-      />
 
       <BackNextButtonGroup
         selectedQuantity={selectedQuantity}
         productId={params.id!}
       />
-    </>
+    </div>
   );
 }
 
@@ -89,7 +91,7 @@ function BackNextButtonGroup({
         size="large"
         className="ProductDetailPage-back-next-button-group__button"
       >
-        <Link to="/search">Back</Link>
+        <Link to="/account">Back</Link>
       </Button>
       <Button
         type="primary"
