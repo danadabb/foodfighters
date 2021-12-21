@@ -18,6 +18,7 @@ const Listings = (): JSX.Element => {
               expiryDate={listing.expiryDate}
               brandName={listing.brandName}
               foodImage={listing.pictureUrl}
+              foodId={id}
             />
           );
         })}
