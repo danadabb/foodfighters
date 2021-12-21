@@ -1,6 +1,7 @@
 @import "~antd/dist/antd.css";
 @import "./LandingPage.css";
 @import "./LoginPage.css";
+@import "./ProductDetailPage.css";
 
 :root {
   font-family: "Rubik", sans-serif;
