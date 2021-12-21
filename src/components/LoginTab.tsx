@@ -35,7 +35,7 @@ export function LoginTab({
       <div className="LoginPage-checkox-container">
         <Checkbox>Remember me</Checkbox>
       </div>
-      <Link to="/root">
+      <Link to="/account" >
         <Button
           type="primary"
           block

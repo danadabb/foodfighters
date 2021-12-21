@@ -1,17 +1,25 @@
 import React from "react";
-import { Button} from "antd";
+import { Button, Divider} from "antd";
 import { Link } from "react-router-dom";
+import FoodCard from "./components/FoodCard";
+import { stringify } from "querystring";
+import data from '././utils/mockCardData.json'
+
 
 function AccountPage() {
+   var foodlist = Object.entries(data)
+
   return (
     <>
-      <h2>WELCOME,xx!</h2>
-      <Link to="/">
+      <h1>Welcome,Jane!</h1>
+      <Link to="/scan">
         <Button type="primary" block size="large" >
           Donate
-
         </Button>
       </Link>
+      <Divider type='vertical'/>
+      <h3>My Listings</h3>
+      {foodlist.slice(0,2).map(([_, val]) => <FoodCard cardTitle={val.title} expiryDate={val.expiryDate} brandName={val.brandName} foodImage={val.pictureUrl} />)}
     </>
   );
 };
