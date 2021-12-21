@@ -11,7 +11,7 @@ export function LandingPage() {
         src={`${process.env.PUBLIC_URL}/landing-page-graphics.png`}
       />
       <Link to="login">
-        <Button type="primary" block size="large">
+        <Button type="primary" block size="large" >
           Get started
         </Button>
       </Link>

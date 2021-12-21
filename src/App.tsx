@@ -3,18 +3,22 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LandingPage } from "./LandingPage";
 import { Header } from "./Header";
-import { LoginPage } from "./LoginPage";
+import { Layout } from 'antd';
+// import { LoginPage } from "./LoginPage";
 
 function App() {
+  const { Content } = Layout;
   return (
     <BrowserRouter>
-      <Header />
-      <div className="App-root-element">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
-        </Routes>
-      </div>
+      <Layout className="App-root-element">
+        <Header/>
+        <Content>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            {/* <Route path="/login" element={<LoginPage />} /> */}
+          </Routes>
+        </Content>
+      </Layout>
     </BrowserRouter>
   );
 }
