@@ -8,6 +8,8 @@ import { Layout } from "antd";
 import { LoginPage } from "./LoginPage";
 import  ManualDonatePage from "./ManualDonatePage";
 // import { LoginPage } from "./LoginPage";
+// import {AccountPage} from './AccountPage';
+import  AccountPage  from './AccountPage';
 
 function App() {
   const { Content } = Layout;
@@ -21,10 +23,12 @@ function App() {
             <Route path="/search" element={<SearchPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/donate" element={<ManualDonatePage />} />
+            <Route path="/account" element={<AccountPage />} />
           </Routes>
         </Content>
       </Layout>
     </BrowserRouter>
+
   );
 }
 
