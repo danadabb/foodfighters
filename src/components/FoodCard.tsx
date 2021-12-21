@@ -44,7 +44,7 @@ const FoodCard = ({
     justifyContent: "space-between",
     alignItems: "flex-start",
     marginLeft: "15px",
-    maxWidth: "50%",
+    maxWidth: "80%",
   };
 
   const foodCardInfoGroupStyle = {
