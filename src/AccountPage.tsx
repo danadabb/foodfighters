@@ -10,7 +10,7 @@ function AccountPage() {
   return (
     <>
       <h1>Welcome,Jane!</h1>
-      <Link to="/scan">
+      <Link to="/donate">
         <Button type="primary" block size="large">
           Donate
         </Button>
