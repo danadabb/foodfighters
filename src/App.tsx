@@ -6,6 +6,7 @@ import SearchPage from "./SearchPage";
 import { Header } from "./Header";
 import { Layout } from "antd";
 import { LoginPage } from "./LoginPage";
+import  ManualDonatePage from "./ManualDonatePage";
 // import { LoginPage } from "./LoginPage";
 // import {AccountPage} from './AccountPage';
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/donate" element={<ManualDonatePage />} />
           </Routes>
         </Content>
       </Layout>

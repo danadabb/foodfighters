@@ -1,0 +1,82 @@
+{
+  "92b6c": {
+    "title": "Can of Spinach",
+    "expiryDate": "10.04.2022",
+    "brandName": "Del Monte",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 3
+  },
+  "91964": {
+    "title": "One Sausage",
+    "expiryDate": "15.02.2022",
+    "brandName": "Steggles",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
+  },
+  "77787": {
+    "title": "Corn Flakes",
+    "expiryDate": "05.09.2022",
+    "brandName": "Kellogs",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 2
+  },
+  "e2395": {
+    "title": "Biscuits, assorted",
+    "expiryDate": "12.04.2023",
+    "brandName": "Assorted",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 5
+  },
+  "59922": {
+    "title": "Coconut Juice",
+    "expiryDate": "29.11.2021",
+    "brandName": "Cocobella",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
+  },
+  "f30ca": {
+    "title": "Instant Coffee",
+    "expiryDate": "02.01.2022",
+    "brandName": "Nescafe",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
+  },
+  "258d5": {
+    "title": "Canned Beans",
+    "expiryDate": "25.07.2024",
+    "brandName": "Heinz",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 6
+  },
+  "833c9": {
+    "title": "Rice Bubbles",
+    "expiryDate": "10.04.2022",
+    "brandName": "Kellogs",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
+  },
+  "87780": {
+    "title": "Apple Juice",
+    "expiryDate": "26.12.2021",
+    "brandName": "Daily Juice",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
+  },
+  "ddf03": {
+    "title": "Canned Tuna",
+    "expiryDate": "24.12.2021",
+    "brandName": "Wild Planet",
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 9
+  }
+}
