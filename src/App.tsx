@@ -12,6 +12,7 @@ import ManualDonatePage from "./ManualDonatePage";
 // import {AccountPage} from './AccountPage';
 import AccountPage from "./AccountPage";
 import { ProductReviewPage } from "./ProductReviewPage";
+import { ProductConfirmationPage } from "./ProductConfirmationPage";
 
 function App() {
   const { Content } = Layout;
@@ -28,6 +29,7 @@ function App() {
             <Route path="/donate" element={<ManualDonatePage />} />
             <Route path="/account" element={<AccountPage />} />
             <Route path="/review/:id" element={<ProductReviewPage />} />
+            <Route path="/confirm/:id" element={<ProductConfirmationPage />} />
           </Routes>
         </Content>
       </Layout>

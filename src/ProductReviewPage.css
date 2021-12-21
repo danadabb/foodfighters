@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  flex: 1 1 auto;
 }
 
 .ProductReviewPage-datetime-container {

@@ -1,10 +1,8 @@
-import { Button, DatePicker, Input, TimePicker, Typography } from "antd";
-import { useState } from "react";
+import { Button, DatePicker, TimePicker, Typography } from "antd";
 import { Link, useParams } from "react-router-dom";
 import { useSessionStorage } from "react-use";
 import foodList from "./utils/mockCardData.json";
 import FoodCard from "./components/FoodCardSmall";
-import { time } from "console";
 
 type ProductProps = {
   title: string;
@@ -92,13 +90,19 @@ function DateTimeSelectors({
       <DatePicker
         size="large"
         className="ProductReviewPage-datetime-field"
-        onChange={(val) => setDate(val?.toString() ?? "")}
+        onChange={(val) => {
+          if (!val) return;
+          setDate(val.format("DD/MM/YYYY"));
+        }}
       />
       <TimePicker
         size="large"
         className="ProductReviewPage-datetime-field"
         showSecond={false}
-        onChange={(val) => setTime(val?.toString() ?? "")}
+        onChange={(val) => {
+          if (!val) return;
+          setTime(val.format("hh:mm a"));
+        }}
       />
     </div>
   );

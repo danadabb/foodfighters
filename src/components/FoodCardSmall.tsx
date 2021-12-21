@@ -9,6 +9,9 @@ type foodCardProps = {
   foodId: string;
   quantity: number;
   setQuantity: (value: number) => void;
+  hideDeleteIcon?: boolean;
+  pickupDate?: string;
+  pickupTime?: string;
 };
 
 const FoodCardSmall = ({
@@ -17,6 +20,9 @@ const FoodCardSmall = ({
   foodId,
   quantity,
   setQuantity,
+  hideDeleteIcon,
+  pickupDate,
+  pickupTime,
 }: foodCardProps): JSX.Element => {
   const { Title, Text } = Typography;
 
@@ -81,8 +87,25 @@ const FoodCardSmall = ({
                 {quantity}
               </Text>
             </div>
+            {pickupDate && pickupDate.length > 0 && (
+              <div style={foodCardInfoGroupStyle}>
+                <Text type="secondary">Pickup date: </Text>
+                <Text strong style={{ color: textBlue }}>
+                  {pickupDate}
+                </Text>
+              </div>
+            )}
+            {pickupTime && pickupTime.length > 0 && (
+              <div style={foodCardInfoGroupStyle}>
+                <Text type="secondary">Pickup date: </Text>
+                <Text strong style={{ color: textBlue }}>
+                  {pickupTime}
+                </Text>
+              </div>
+            )}
           </div>
           <Button
+            hidden={hideDeleteIcon}
             icon={<DeleteOutlined />}
             type="text"
             onClick={() => setQuantity(0)}
