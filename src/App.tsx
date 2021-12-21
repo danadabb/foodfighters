@@ -6,6 +6,7 @@ import SearchPage from "./SearchPage";
 import { Header } from "./Header";
 import { Layout } from "antd";
 import { LoginPage } from "./LoginPage";
+import { ProductDetailPage } from "./ProductDetailPage";
 // import { LoginPage } from "./LoginPage";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/product/:id" element={<ProductDetailPage />} />
           </Routes>
         </Content>
       </Layout>
