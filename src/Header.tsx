@@ -1,5 +1,6 @@
 import { PageHeader } from "antd";
+import Logo from './components/Logo'
 
 export function Header() {
-  return <PageHeader title="FF" />;
+  return <PageHeader><Logo/></PageHeader>;
 }

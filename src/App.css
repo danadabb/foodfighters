@@ -18,6 +18,7 @@
 
 .App-root-element {
   padding: 6px;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
