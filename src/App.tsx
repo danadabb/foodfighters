@@ -9,6 +9,8 @@ import { LoginPage } from "./LoginPage";
 import { ProductDetailPage } from "./ProductDetailPage";
 import ManualDonatePage from "./ManualDonatePage";
 // import { LoginPage } from "./LoginPage";
+// import {AccountPage} from './AccountPage';
+import  AccountPage  from './AccountPage';
 
 function App() {
   const { Content } = Layout;
@@ -23,10 +25,12 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/product/:id" element={<ProductDetailPage />} />
             <Route path="/donate" element={<ManualDonatePage />} />
+            <Route path="/account" element={<AccountPage />} />
           </Routes>
         </Content>
       </Layout>
     </BrowserRouter>
+
   );
 }
 

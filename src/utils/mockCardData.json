@@ -12,7 +12,7 @@
     "expiryDate": "15.02.2022",
     "brandName": "Steggles",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "sausage.jpeg",
     "productQuantity": 1
   },
   "77787": {
@@ -20,7 +20,7 @@
     "expiryDate": "05.09.2022",
     "brandName": "Kellogs",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "cornflakes.jpeg",
     "productQuantity": 2
   },
   "e2395": {
@@ -28,7 +28,7 @@
     "expiryDate": "12.04.2023",
     "brandName": "Assorted",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "biscuits.jpeg",
     "productQuantity": 5
   },
   "59922": {
@@ -36,7 +36,7 @@
     "expiryDate": "29.11.2021",
     "brandName": "Cocobella",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "coconutjuice.jpeg",
     "productQuantity": 1
   },
   "f30ca": {
@@ -44,7 +44,7 @@
     "expiryDate": "02.01.2022",
     "brandName": "Nescafe",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "coffee.jpeg",
     "productQuantity": 1
   },
   "258d5": {
@@ -52,7 +52,7 @@
     "expiryDate": "25.07.2024",
     "brandName": "Heinz",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "beans.png",
     "productQuantity": 6
   },
   "833c9": {
@@ -60,7 +60,7 @@
     "expiryDate": "10.04.2022",
     "brandName": "Kellogs",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "ricebubbles.jpeg",
     "productQuantity": 1
   },
   "87780": {
@@ -68,7 +68,7 @@
     "expiryDate": "26.12.2021",
     "brandName": "Daily Juice",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "applejuice.jpeg",
     "productQuantity": 1
   },
   "ddf03": {
@@ -76,7 +76,7 @@
     "expiryDate": "24.12.2021",
     "brandName": "Wild Planet",
     "description": "Food product description placeholder. Yummy yummy",
-    "pictureUrl": "spinach.jpeg",
+    "pictureUrl": "tuna.jpeg",
     "productQuantity": 9
   }
 }
