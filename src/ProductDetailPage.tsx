@@ -2,6 +2,8 @@ import { Button, Image, Typography } from "antd";
 import { Link, useParams } from "react-router-dom";
 import { ProductQuantitySelector } from "./components/ProductQuantitySelector";
 import foodList from "./utils/mockCardData.json";
+import { useSessionStorage } from "react-use";
+import { useState } from "react";
 
 type ProductProps = {
   title: string;
@@ -10,10 +12,13 @@ type ProductProps = {
   description: string;
   pictureUrl: string;
   productQuantity: number;
+  streetName: string;
+  postCode: string;
 };
 
 export function ProductDetailPage() {
   const params = useParams();
+  const [selectedQuantity, setSelectedQuantity] = useState<number>(0);
   const {
     title,
     description,
@@ -44,14 +49,38 @@ export function ProductDetailPage() {
         />
       </div>
 
-      <ProductQuantitySelector availableQuantity={productQuantity} />
+      <ProductQuantitySelector
+        availableQuantity={productQuantity}
+        selectedQuantity={selectedQuantity}
+        dispatcher={setSelectedQuantity}
+      />
 
-      <BackNextButtonGroup />
+      <BackNextButtonGroup
+        selectedQuantity={selectedQuantity}
+        productId={params.id!}
+      />
     </>
   );
 }
 
-function BackNextButtonGroup() {
+function BackNextButtonGroup({
+  productId,
+  selectedQuantity,
+}: {
+  selectedQuantity: number;
+  productId: string;
+}) {
+  const [confirmedQuantity, setConfirmedQuantity] = useSessionStorage<number>(
+    "confirmedQuantity",
+    0
+  );
+
+  const addToCart = () => {
+    setConfirmedQuantity(selectedQuantity);
+    window.history.pushState(null, "", `/review/${productId}`);
+    window.location.href = `/review/${productId}`;
+  };
+
   return (
     <div className="ProductDetailPage-back-next-button-group">
       <Button
@@ -67,6 +96,8 @@ function BackNextButtonGroup() {
         block
         size="large"
         className="ProductDetailPage-back-next-button-group__button"
+        disabled={Boolean(selectedQuantity === 0)}
+        onClick={() => addToCart()}
       >
         Next
       </Button>

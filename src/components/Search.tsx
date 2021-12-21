@@ -5,25 +5,27 @@ const mockVal = (str: string, repeat: number = 1) => ({
   value: str.repeat(repeat),
 });
 
-const SearchBar: React.FC = () => {
+type Props = {
+  onSearchTerm: Function;
+};
+const SearchBar = (props: Props): JSX.Element => {
   // const [value, setValue] = useState('');
   const [options, setOptions] = useState<{ value: string }[]>([]);
   const onSearch = (searchText: string) => {
-    setOptions(
-      !searchText
-        ? []
-        : [mockVal(searchText), mockVal(searchText, 2), mockVal(searchText, 3)]
-    );
+    setOptions(!searchText ? [] : [mockVal(searchText)]);
+    props.onSearchTerm(searchText);
   };
   const onSelect = (data: string) => {
     console.log("onSelect", data);
+    props.onSearchTerm(data);
   };
+
   return (
     <>
       <AutoComplete
         dropdownClassName="certain-category-search-dropdown"
         dropdownMatchSelectWidth={500}
-        style={{width: '100%'}}
+        style={{ width: "100%" }}
         options={options}
         onSelect={onSelect}
         onSearch={onSearch}

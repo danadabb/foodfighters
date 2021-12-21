@@ -2,6 +2,7 @@
 @import "./LandingPage.css";
 @import "./LoginPage.css";
 @import "./ProductDetailPage.css";
+@import "./ProductReviewPage.css";
 
 :root {
   font-family: "Rubik", sans-serif;

@@ -1,14 +1,15 @@
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { Button, Typography } from "antd";
-import { useState } from "react";
 
 export function ProductQuantitySelector({
   availableQuantity,
+  selectedQuantity,
+  dispatcher,
 }: {
   availableQuantity: number;
+  selectedQuantity: number;
+  dispatcher: React.Dispatch<React.SetStateAction<number>>;
 }) {
-  const [selectedQuantity, setSelectedQuantity] = useState<number>(0);
-
   return (
     <div className="ProductQuantitySelector-container">
       <Button
@@ -16,7 +17,7 @@ export function ProductQuantitySelector({
         size="large"
         shape="circle"
         disabled={Boolean(selectedQuantity === 0)}
-        onClick={() => setSelectedQuantity(selectedQuantity - 1)}
+        onClick={() => dispatcher(selectedQuantity - 1)}
       />
 
       <Typography className="ProductQuantitySelector-quantity-indicator">
@@ -28,7 +29,7 @@ export function ProductQuantitySelector({
         size="large"
         shape="circle"
         disabled={Boolean(selectedQuantity === availableQuantity)}
-        onClick={() => setSelectedQuantity(selectedQuantity + 1)}
+        onClick={() => dispatcher(selectedQuantity + 1)}
       />
     </div>
   );
