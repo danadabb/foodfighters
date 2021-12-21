@@ -1,62 +1,82 @@
 {
   "92b6c": {
-    "cardTitle": "Can of Spinach",
+    "title": "Can of Spinach",
     "expiryDate": "10.04.2022",
     "brandName": "Del Monte",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 3
   },
   "91964": {
-    "cardTitle": "One Sausage",
+    "title": "One Sausage",
     "expiryDate": "15.02.2022",
     "brandName": "Steggles",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
   },
   "77787": {
-    "cardTitle": "Corn Flakes",
+    "title": "Corn Flakes",
     "expiryDate": "05.09.2022",
     "brandName": "Kellogs",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 2
   },
   "e2395": {
-    "cardTitle": "Biscuits, assorted",
+    "title": "Biscuits, assorted",
     "expiryDate": "12.04.2023",
     "brandName": "Assorted",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 5
   },
   "59922": {
-    "cardTitle": "Coconut Juice",
+    "title": "Coconut Juice",
     "expiryDate": "29.11.2021",
     "brandName": "Cocobella",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
   },
   "f30ca": {
-    "cardTitle": "Instant Coffee",
+    "title": "Instant Coffee",
     "expiryDate": "02.01.2022",
     "brandName": "Nescafe",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
   },
   "258d5": {
-    "cardTitle": "Canned Beans",
+    "title": "Canned Beans",
     "expiryDate": "25.07.2024",
     "brandName": "Heinz",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 6
   },
   "833c9": {
-    "cardTitle": "Rice Bubbles",
+    "title": "Rice Bubbles",
     "expiryDate": "10.04.2022",
     "brandName": "Kellogs",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
   },
   "87780": {
-    "cardTitle": "Apple Juice",
+    "title": "Apple Juice",
     "expiryDate": "26.12.2021",
     "brandName": "Daily Juice",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 1
   },
   "ddf03": {
-    "cardTitle": "Canned Tuna",
+    "title": "Canned Tuna",
     "expiryDate": "24.12.2021",
     "brandName": "Wild Planet",
-    "foodImage": "@app/src/utils/images/spinach.jpeg"
+    "description": "Food product description placeholder. Yummy yummy",
+    "pictureUrl": "@app/src/utils/images/spinach.jpeg",
+    "productQuantity": 9
   }
 }
