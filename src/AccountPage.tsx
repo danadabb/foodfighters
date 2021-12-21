@@ -55,6 +55,7 @@ function AccountPage() {
           expiryDate={val.expiryDate}
           brandName={val.brandName}
           foodImage={val.pictureUrl}
+          deleteButton
         />
       ))}
     </>
