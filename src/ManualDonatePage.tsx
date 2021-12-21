@@ -13,7 +13,7 @@ const ManualDonatePage = () => {
             <Form.Item label="Manufacturer" required>
               <Input placeholder="Manufacturer" />
             </Form.Item>
-            <Form.Item label="Product Name" required>
+            <Form.Item label="Expiry Date" required>
               <DatePicker />
             </Form.Item>
             <Form.Item label="Pickup Location" required>
