@@ -9,7 +9,10 @@ export function Header() {
       <Link to="/search">
         <Logo />
       </Link>
-      <MenuOutlined style={{float:'right', fontSize:'20px', color:'#520339'}}/>
+      <Link to="/account">
+      <MenuOutlined style={{float:'right', fontSize:'20px', color:'#520339'}} />
+      </Link>
+     
     </PageHeader>
   );
 }
