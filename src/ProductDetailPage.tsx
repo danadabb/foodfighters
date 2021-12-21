@@ -1,5 +1,5 @@
 import { Button, Image, Typography } from "antd";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ProductQuantitySelector } from "./components/ProductQuantitySelector";
 import foodList from "./utils/mockCardData.json";
 
@@ -60,7 +60,7 @@ function BackNextButtonGroup() {
         size="large"
         className="ProductDetailPage-back-next-button-group__button"
       >
-        Back
+        <Link to="/search">Back</Link>
       </Button>
       <Button
         type="primary"

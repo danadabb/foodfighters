@@ -1,11 +1,13 @@
 import React from "react";
 import { Card, Typography } from "antd";
+import { Link } from "react-router-dom";
 
 type foodCardProps = {
   cardTitle: string;
   expiryDate: string;
   brandName: string;
   foodImage: string;
+  foodId: string;
 };
 
 const FoodCard = ({
@@ -13,6 +15,7 @@ const FoodCard = ({
   expiryDate,
   brandName,
   foodImage,
+  foodId,
 }: foodCardProps): JSX.Element => {
   const { Title, Text } = Typography;
 
@@ -30,9 +33,9 @@ const FoodCard = ({
   const foodCardImageContainerStyle = {
     padding: 0,
     margin: 0,
-    width: '100px',
-    height: '120px',
-    backgroundColor: 'white'
+    width: "100px",
+    height: "120px",
+    backgroundColor: "white",
   };
 
   const foodCardInfoStyle = {
@@ -62,32 +65,34 @@ const FoodCard = ({
           border: "1px solid black",
         }}
       >
-        <div style={foodCardContentStyle} onClick={() => alert("clicked!")}>
-          <div style={foodCardImageContainerStyle}>
-            <img
-              src={foodImage}
-              alt={`${cardTitle}`}
-              style={{height: '100%', width: '100%', objectFit: 'contain' }}
-            />
-          </div>
-          <div style={foodCardInfoStyle}>
-            <Title level={3} style={{ color: textBlue }}>
-              {cardTitle}
-            </Title>
-            <div style={foodCardInfoGroupStyle}>
-              <Text type="secondary">Expiry Date</Text>
-              <Text strong style={{ color: textBlue }}>
-                {expiryDate}
-              </Text>
+        <Link to={`/product/${foodId}`}>
+          <div style={foodCardContentStyle}>
+            <div style={foodCardImageContainerStyle}>
+              <img
+                src={foodImage}
+                alt={`${cardTitle}`}
+                style={{ height: "100%", width: "100%", objectFit: "contain" }}
+              />
             </div>
-            <div style={foodCardInfoGroupStyle}>
-              <Text type="secondary">Brand</Text>
-              <Text strong style={{ color: textBlue }}>
-                {brandName}
-              </Text>
+            <div style={foodCardInfoStyle}>
+              <Title level={3} style={{ color: textBlue }}>
+                {cardTitle}
+              </Title>
+              <div style={foodCardInfoGroupStyle}>
+                <Text type="secondary">Expiry Date</Text>
+                <Text strong style={{ color: textBlue }}>
+                  {expiryDate}
+                </Text>
+              </div>
+              <div style={foodCardInfoGroupStyle}>
+                <Text type="secondary">Brand</Text>
+                <Text strong style={{ color: textBlue }}>
+                  {brandName}
+                </Text>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       </Card>
     </>
   );
