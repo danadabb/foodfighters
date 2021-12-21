@@ -1,4 +1,5 @@
-import { Typography } from "antd";
+import { DatePicker, Input, TimePicker, Typography } from "antd";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSessionStorage } from "react-use";
 import foodList from "./utils/mockCardData.json";
@@ -20,6 +21,8 @@ export function ProductReviewPage() {
     0
   );
   const params = useParams();
+  const [date, setDate] = useState<string>("");
+  const [time, setTime] = useState<string>("");
 
   const {
     title,
@@ -53,8 +56,43 @@ export function ProductReviewPage() {
           <Typography.Paragraph>{[postCode]}</Typography.Paragraph>
 
           <Typography.Title level={4}>Choose a date and time</Typography.Title>
+
+          <DateTimeSelectors
+            date={date}
+            time={time}
+            setDate={setDate}
+            setTime={setTime}
+          />
         </>
       )}
     </>
+  );
+}
+
+function DateTimeSelectors({
+  date,
+  time,
+  setDate,
+  setTime,
+}: {
+  date: string;
+  setDate: React.Dispatch<React.SetStateAction<string>>;
+  time: string;
+  setTime: React.Dispatch<React.SetStateAction<string>>;
+}) {
+  return (
+    <div className="ProductReviewPage-datetime-container">
+      <DatePicker
+        size="large"
+        className="ProductReviewPage-datetime-field"
+        onChange={(val) => setDate(val?.toString() ?? "")}
+      />
+      <TimePicker
+        size="large"
+        className="ProductReviewPage-datetime-field"
+        showSecond={false}
+        onChange={(val) => setTime(val?.toString() ?? "")}
+      />
+    </div>
   );
 }

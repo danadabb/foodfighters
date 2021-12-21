@@ -1,0 +1,15 @@
+.ProductReviewPage-datetime-container {
+  display: flex;
+}
+
+.ProductReviewPage-datetime-field {
+  width: 100%;
+}
+
+.ProductReviewPage-datetime-field:first-child {
+  margin-right: 5px;
+}
+
+.ProductReviewPage-datetime-field:last-child {
+  margin-left: 5px;
+}
