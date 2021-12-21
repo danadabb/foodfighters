@@ -1,5 +1,6 @@
 @import "~antd/dist/antd.css";
 @import "./LandingPage.css";
+@import "./LoginPage.css";
 
 :root {
   font-family: "Rubik", sans-serif;
@@ -48,4 +49,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #e5e5e5;
 }
